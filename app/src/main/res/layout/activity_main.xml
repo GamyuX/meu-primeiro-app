@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/top"
+        android:background="#333"
+        android:contentDescription="top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/center"
+        android:layout_marginBottom="35dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <ImageView
+        android:id="@+id/topEnd"
+        android:contentDescription="topEnd"
+        android:background="#333"
+        app:layout_constraintEnd_toEndOf="@id/centerEnd"
+        app:layout_constraintBottom_toTopOf="@id/centerEnd"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="35dp" />
+
+    <ImageView
+        android:id="@+id/topStart"
+        android:contentDescription="topStart"
+        app:layout_constraintStart_toStartOf="@id/centerStart"
+        app:layout_constraintBottom_toTopOf="@id/centerStart"
+        android:background="#333"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="35dp" />
+
+    <ImageView
+        android:id="@+id/center"
+        android:contentDescription="center"
+        android:background="#333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <ImageView
+        android:id="@+id/centerEnd"
+        android:contentDescription="centerEnd"
+        android:background="#333"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/center"
+        android:layout_marginStart="35dp" />
+
+    <ImageView
+        android:id="@+id/centerStart"
+        android:contentDescription="centerStart"
+        android:background="#333"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/center"
+        android:layout_marginEnd="35dp"/>
+
+    <ImageView
+        android:id="@+id/bottom"
+        android:contentDescription="bottom"
+        android:background="#333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/center"
+        android:layout_marginTop="35dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <ImageView
+        android:id="@+id/bottomEnd"
+        android:contentDescription="bottomEnd"
+        android:background="#333"
+        app:layout_constraintTop_toBottomOf="@+id/centerEnd"
+        app:layout_constraintEnd_toEndOf="@+id/centerEnd"
+        android:layout_marginTop="35dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <ImageView
+        android:id="@+id/bottomStart"
+        android:contentDescription="bottomStart"
+        app:layout_constraintStart_toStartOf="@+id/centerStart"
+        app:layout_constraintTop_toBottomOf="@id/centerStart"
+        android:layout_marginTop="35dp"
+        android:background="#333"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <Button
+        android:id="@+id/button_reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="95dp"
+        android:text="Resetar"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
